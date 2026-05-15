@@ -1,6 +1,20 @@
 # Feedback Management System
 
-Full-stack web application — React frontend, FastAPI backend, SQLite database.
+Full-stack web application for centralized feedback collection and management. Built as part of the AFDE Capstone Project — Phase 1.
+
+## Project Overview
+
+Organizations collect feedback from participants, employees, and customers across multiple platforms, resulting in scattered data and no centralized management. This system provides a single platform to submit, view, search, filter, and manage feedback records efficiently.
+
+## Features
+
+- Role-based access (Admin / User)
+- Submit feedback with name, program, rating (1–5), and comments
+- View all feedback records
+- View detailed feedback entries with timestamps
+- Edit and delete feedback (Admin only)
+- Keyword-based search across name, program, and comments
+- Filter by program name and rating
 
 ## Project Structure
 
@@ -15,22 +29,29 @@ AFDE_May26_ShriramKumar_FMS/
 │   ├── routers/
 │   │   └── feedback.py
 │   └── requirements.txt
-└── frontend/
-    ├── public/index.html
-    ├── src/
-    │   ├── components/FeedbackCard.js
-    │   ├── pages/
-    │   │   ├── RoleSelect.js
-    │   │   ├── Dashboard.js
-    │   │   ├── SubmitFeedback.js
-    │   │   ├── FeedbackList.js
-    │   │   └── FeedbackDetail.js
-    │   ├── services/feedbackService.js
-    │   ├── App.js
-    │   ├── index.css
-    │   ├── index.js
-    │   └── api.js
-    └── package.json
+├── frontend/
+│   ├── public/index.html
+│   ├── src/
+│   │   ├── components/FeedbackCard.js
+│   │   ├── pages/
+│   │   │   ├── RoleSelect.js
+│   │   │   ├── Dashboard.js
+│   │   │   ├── SubmitFeedback.js
+│   │   │   ├── FeedbackList.js
+│   │   │   └── FeedbackDetail.js
+│   │   ├── services/feedbackService.js
+│   │   ├── App.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   └── api.js
+│   └── package.json
+├── database/
+│   └── schema.sql
+├── docs/
+│   └── api.md
+├── screenshots/
+├── README.md
+└── requirements.txt
 ```
 
 ## Setup & Run
@@ -56,6 +77,11 @@ npm start
 
 App runs at: http://localhost:3000
 
+### Database
+
+SQLite database (`feedback.db`) is auto-created on first backend run.  
+Schema reference: `database/schema.sql`
+
 ## API Endpoints
 
 | Method | Endpoint | Description |
@@ -66,6 +92,8 @@ App runs at: http://localhost:3000
 | PUT | /feedback/{id} | Update feedback |
 | DELETE | /feedback/{id} | Delete feedback |
 | GET | /search | Search & filter feedback |
+
+Full API documentation with request/response examples: `docs/api.md`
 
 ## Tech Stack
 
