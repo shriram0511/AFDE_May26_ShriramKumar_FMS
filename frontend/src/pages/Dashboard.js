@@ -18,11 +18,11 @@ function Dashboard() {
   const totalCount = feedbackList.length;
   const avgRating =
     totalCount > 0
-      ? (feedbackList.reduce((sum, f) => sum + f.rating, 0) / totalCount).toFixed(1)
-      : 0;
+      ? (feedbackList.reduce((sum, f) => sum + f.rating, 0) / totalCount).toFixed(2)
+      : "—";
   const recent = feedbackList.slice(0, 5);
 
-  if (loading) return <div className="loading">Loading...</div>;
+  if (loading) return <div className="loading">Loading dashboard...</div>;
 
   return (
     <div className="page">
@@ -30,25 +30,31 @@ function Dashboard() {
 
       <div className="stats-row">
         <div className="stat-card">
-          <div className="stat-value">{totalCount}</div>
-          <div className="stat-label">Total Feedback</div>
+          <div className="stat-icon blue">📝</div>
+          <div className="stat-info">
+            <div className="stat-value">{totalCount}</div>
+            <div className="stat-label">Total Feedback</div>
+          </div>
         </div>
         <div className="stat-card">
-          <div className="stat-value">{avgRating}</div>
-          <div className="stat-label">Average Rating</div>
+          <div className="stat-icon green">⭐</div>
+          <div className="stat-info">
+            <div className="stat-value">{avgRating}</div>
+            <div className="stat-label">Average Rating</div>
+          </div>
         </div>
       </div>
 
-      <h3 className="section-title">Recent Feedback</h3>
+      <p className="section-title">🕐 Recent Feedback</p>
       {recent.length === 0 ? (
-        <p className="empty">No feedback yet.</p>
+        <div className="empty">No feedback submitted yet.</div>
       ) : (
         recent.map((f) => <FeedbackCard key={f.feedback_id} feedback={f} />)
       )}
 
       {totalCount > 5 && (
         <button className="btn-primary view-all-btn" onClick={() => navigate("/list")}>
-          View All ({totalCount})
+          View All ({totalCount}) →
         </button>
       )}
     </div>

@@ -1,20 +1,27 @@
 # Feedback Management System
-
-Full-stack web application for centralized feedback collection and management. Built as part of the AFDE Capstone Project — Phase 1.
+A centralized web-based Feedback Management System to collect, view, search, and manage feedback records efficiently.
 
 ## Project Overview
+Organizations collect feedback from participants across multiple programs and events, resulting in scattered data with no centralized management. This system digitizes and streamlines feedback operations through a centralized web application built with React, FastAPI, and SQLite.
 
-Organizations collect feedback from participants, employees, and customers across multiple platforms, resulting in scattered data and no centralized management. This system provides a single platform to submit, view, search, filter, and manage feedback records efficiently.
-
-## Features
-
-- Role-based access (Admin / User)
-- Submit feedback with name, program, rating (1–5), and comments
-- View all feedback records
+## Features Implemented
+- Submit feedback with participant name, program, rating, and comments
+- View all submitted feedback records
 - View detailed feedback entries with timestamps
 - Edit and delete feedback (Admin only)
-- Keyword-based search across name, program, and comments
-- Filter by program name and rating
+- Role-based access — Admin and User roles
+- Admin Dashboard with stats (total feedback, average rating, recent entries)
+- Keyword search across participant name, program name, and comments
+- Filter feedback by program name and rating
+
+## Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React 18, React Router v6, Axios |
+| Backend | FastAPI, SQLAlchemy |
+| Database | SQLite |
+| API Testing | Postman / Swagger UI |
 
 ## Project Structure
 
@@ -31,43 +38,46 @@ AFDE_May26_ShriramKumar_FMS/
 │   └── requirements.txt
 ├── frontend/
 │   ├── public/index.html
-│   ├── src/
-│   │   ├── components/FeedbackCard.js
-│   │   ├── pages/
-│   │   │   ├── RoleSelect.js
-│   │   │   ├── Dashboard.js
-│   │   │   ├── SubmitFeedback.js
-│   │   │   ├── FeedbackList.js
-│   │   │   └── FeedbackDetail.js
-│   │   ├── services/feedbackService.js
-│   │   ├── App.js
-│   │   ├── index.css
-│   │   ├── index.js
-│   │   └── api.js
-│   └── package.json
+│   └── src/
+│       ├── components/FeedbackCard.js
+│       ├── pages/
+│       │   ├── RoleSelect.js
+│       │   ├── Dashboard.js
+│       │   ├── SubmitFeedback.js
+│       │   ├── FeedbackList.js
+│       │   └── FeedbackDetail.js
+│       ├── services/
+│       │   ├── api.js
+│       │   └── feedbackService.js
+│       ├── App.js
+│       ├── index.css
+│       └── index.js
 ├── database/
 │   └── schema.sql
 ├── docs/
 │   └── api.md
 ├── screenshots/
+├── requirements.txt
 ├── README.md
-└── requirements.txt
+└── .gitignore
 ```
 
-## Setup & Run
+## Setup Instructions
 
-### Backend
+### Backend Setup
 
 ```bash
 cd backend
+python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
 API runs at: http://localhost:8000  
-Swagger docs: http://localhost:8000/docs
+Swagger Docs: http://localhost:8000/docs
 
-### Frontend
+### Frontend Setup
 
 ```bash
 cd frontend
@@ -77,9 +87,10 @@ npm start
 
 App runs at: http://localhost:3000
 
-### Database
+### Database Setup
 
-SQLite database (`feedback.db`) is auto-created on first backend run.  
+Database is automatically created as `feedback.db` inside the `backend/` folder when the backend starts for the first time.
+
 Schema reference: `database/schema.sql`
 
 ## API Endpoints
@@ -88,15 +99,21 @@ Schema reference: `database/schema.sql`
 |--------|----------|-------------|
 | GET | /feedback | Get all feedback |
 | GET | /feedback/{id} | Get feedback by ID |
-| POST | /feedback | Submit feedback |
+| POST | /feedback | Submit new feedback |
 | PUT | /feedback/{id} | Update feedback |
 | DELETE | /feedback/{id} | Delete feedback |
-| GET | /search | Search & filter feedback |
+| GET | /search?keyword= | Search feedback by keyword |
+| GET | /search?rating= | Filter feedback by rating |
+| GET | /search?program_name= | Filter feedback by program |
 
 Full API documentation with request/response examples: `docs/api.md`
 
-## Tech Stack
+## Screenshots
 
-- **Frontend**: React 18, React Router v6, Axios
-- **Backend**: FastAPI, SQLAlchemy
-- **Database**: SQLite
+Screenshots are available in the `screenshots/` folder.
+
+## Database Schema
+
+| Table | Columns |
+|-------|---------|
+| feedback | feedback_id, participant_name, program_name, rating, comments, submitted_at |

@@ -15,14 +15,14 @@ function App() {
   return (
     <BrowserRouter>
       <nav className="navbar">
-        <span className="brand">Feedback Management System</span>
+        <span className="brand">💬 FMS</span>
         <div className="nav-links">
-          {role === "admin" && <NavLink to="/" end>Dashboard</NavLink>}
-          <NavLink to="/list">All Feedback</NavLink>
-          <NavLink to="/submit">Submit Feedback</NavLink>
+          {role === "admin" && <NavLink to="/" end>🏠 Dashboard</NavLink>}
+          <NavLink to="/list">📋 All Feedback</NavLink>
+          {role === "user" && <NavLink to="/submit">✏️ Submit Feedback</NavLink>}
         </div>
         <button className="logout-btn" onClick={() => setRole(null)}>
-          Logout ({role})
+          🚪 Logout ({role})
         </button>
       </nav>
 
@@ -32,7 +32,6 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/list" element={<FeedbackList />} />
             <Route path="/feedback/:id" element={<FeedbackDetail role={role} />} />
-            <Route path="/submit" element={<SubmitFeedback />} />
           </>
         ) : (
           <>

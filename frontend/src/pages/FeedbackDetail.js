@@ -42,7 +42,7 @@ function FeedbackDetail({ role }) {
   };
 
   if (loading) return <div className="loading">Loading...</div>;
-  if (!feedback) return <div className="loading">Not found</div>;
+  if (!feedback) return <div className="loading">Feedback not found.</div>;
 
   return (
     <div className="page-sm">
@@ -53,41 +53,37 @@ function FeedbackDetail({ role }) {
           <>
             <div className="detail-header">
               <h2 className="detail-name">{feedback.participant_name}</h2>
-              <span className="badge" style={{ backgroundColor: RATING_COLORS[feedback.rating] }}>
-                {feedback.rating} - {RATING_LABELS[feedback.rating]}
+              <span className="badge" style={{ backgroundColor: RATING_COLORS[feedback.rating], fontSize: "13px", padding: "5px 14px" }}>
+                {feedback.rating} ★ {RATING_LABELS[feedback.rating]}
               </span>
             </div>
-            <p className="detail-program">{feedback.program_name}</p>
+            <p className="detail-program">📌 {feedback.program_name}</p>
             <p className="detail-label">Comments</p>
-            <p className="detail-comments">{feedback.comments || "No comments provided"}</p>
-            <p className="detail-date">
-              Submitted on {new Date(feedback.submitted_at).toLocaleString("en-IN", {
-                day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit",
-              })}
-            </p>
+            <p className="detail-comments">{feedback.comments || "No comments provided."}</p>
+            <p className="detail-date">🕐 Submitted on {new Date(feedback.submitted_at).toLocaleString("en-IN", {
+              day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit",
+            })}</p>
             {role === "admin" && (
               <div className="btn-actions">
-                <button onClick={() => setEditing(true)} className="btn-primary">Edit</button>
-                <button onClick={handleDelete} className="btn-danger">Delete</button>
+                <button onClick={() => setEditing(true)} className="btn-primary">✏️ Edit</button>
+                <button onClick={handleDelete} className="btn-danger">🗑️ Delete</button>
               </div>
             )}
           </>
         ) : (
           <>
-            <h2 className="detail-name" style={{ marginBottom: "20px" }}>Edit Feedback</h2>
+            <h2 className="detail-name" style={{ marginBottom: "24px" }}>Edit Feedback</h2>
 
             <div className="form-field">
               <label className="form-label">Participant Name</label>
               <input className="form-input" value={form.participant_name}
                 onChange={(e) => setForm({ ...form, participant_name: e.target.value })} />
             </div>
-
             <div className="form-field">
               <label className="form-label">Program Name</label>
               <input className="form-input" value={form.program_name}
                 onChange={(e) => setForm({ ...form, program_name: e.target.value })} />
             </div>
-
             <div className="form-field">
               <label className="form-label">Rating</label>
               <select className="form-input" value={form.rating}
@@ -97,7 +93,6 @@ function FeedbackDetail({ role }) {
                 ))}
               </select>
             </div>
-
             <div className="form-field">
               <label className="form-label">Comments</label>
               <textarea className="form-textarea" rows={4} value={form.comments}
