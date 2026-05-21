@@ -5,6 +5,7 @@ import SubmitFeedback from "./pages/SubmitFeedback";
 import FeedbackList from "./pages/FeedbackList";
 import FeedbackDetail from "./pages/FeedbackDetail";
 import RoleSelect from "./pages/RoleSelect";
+import ETLUpload from "./pages/ETLUpload";
 import "./index.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           {role === "admin" && <NavLink to="/" end>🏠 Dashboard</NavLink>}
           <NavLink to="/list">📋 All Feedback</NavLink>
           {role === "user" && <NavLink to="/submit">✏️ Submit Feedback</NavLink>}
+          {role === "admin" && <NavLink to="/etl">⚡ ETL Pipeline</NavLink>}
         </div>
         <button className="logout-btn" onClick={() => setRole(null)}>
           🚪 Logout ({role})
@@ -32,6 +34,7 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/list" element={<FeedbackList />} />
             <Route path="/feedback/:id" element={<FeedbackDetail role={role} />} />
+            <Route path="/etl" element={<ETLUpload />} />
           </>
         ) : (
           <>

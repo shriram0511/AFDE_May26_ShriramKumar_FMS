@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from database import engine, Base
 from routers import feedback
+from routers import etl
 
 Base.metadata.create_all(bind=engine)
 
@@ -17,3 +18,4 @@ app.add_middleware(
 )
 
 app.include_router(feedback.router)
+app.include_router(etl.router)

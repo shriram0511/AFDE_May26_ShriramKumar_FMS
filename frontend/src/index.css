@@ -417,3 +417,48 @@ body {
   font-size: 14px; font-weight: 500;
   background: var(--card); border: 2px dashed var(--border); border-radius: 14px;
 }
+
+/* ── ETL ── */
+.etl-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 2px 8px rgba(249,115,22,0.06), 0 12px 32px rgba(249,115,22,0.08);
+}
+.etl-hint { font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+.etl-upload-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.etl-file-input {
+  flex: 1; padding: 10px 14px;
+  border: 1.5px solid var(--border); border-radius: 10px;
+  font-family: 'Poppins', sans-serif; font-size: 13px;
+  background: var(--bg); color: var(--text);
+  cursor: pointer;
+}
+.etl-file-input:focus { outline: none; border-color: var(--primary); }
+.etl-result { margin-top: 28px; }
+.etl-result-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 16px; }
+.etl-result-title span { color: var(--primary); }
+.etl-stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.etl-stat {
+  flex: 1; min-width: 100px;
+  border-radius: 12px; padding: 16px;
+  text-align: center;
+}
+.etl-stat.blue { background: #eff6ff; }
+.etl-stat.green { background: #f0fdf4; }
+.etl-stat.orange { background: #fff7ed; }
+.etl-stat.red { background: #fff1f2; }
+.etl-stat-value { font-size: 28px; font-weight: 700; color: var(--text); }
+.etl-stat.blue .etl-stat-value { color: #3b82f6; }
+.etl-stat.green .etl-stat-value { color: #22c55e; }
+.etl-stat.orange .etl-stat-value { color: var(--primary); }
+.etl-stat.red .etl-stat-value { color: #ef4444; }
+.etl-stat-label { font-size: 12px; font-weight: 600; color: var(--text-muted); margin-top: 4px; }
+.etl-errors { list-style: none; padding: 12px 16px; background: #fff1f2; border-radius: 10px; }
+.etl-errors li { font-size: 13px; color: #ef4444; padding: 3px 0; }
+.etl-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+.etl-table th { background: #f8fafc; padding: 10px 14px; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border); }
+.etl-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text); }
+.etl-table tr:last-child td { border-bottom: none; }
+.etl-table tr:hover td { background: #f8fafc; }

@@ -1,0 +1,108 @@
+participant_name,program_name,rating,comments,submitted_at
+Arjun Kumar,React Training,5,Excellent content and well-structured sessions.,2026-01-05
+Priya Sharma,FastAPI Workshop,4,Very informative. Practical examples were helpful.,2026-01-06
+Ravi Patel,Python Basics,3,Decent session. Could use more hands-on exercises.,2026-01-07
+Anitha Reddy,Data Science Fundamentals,5,Outstanding program. Highly recommend to everyone.,2026-01-08
+Suresh Babu,AFDE Capstone,4,Great project guidance. Learned a lot.,2026-01-09
+Deepika Singh,DevOps Bootcamp,2,Below expectations. Content was too theoretical.,2026-01-10
+Karthik Raj,Machine Learning Workshop,5,Best workshop I have attended. Very practical.,2026-01-11
+Meena Iyer,SQL Fundamentals,4,Good session. Query optimization part was excellent.,2026-01-12
+Vijay Kumar,React Training,3,Good overall but needed more advanced topics.,2026-01-13
+Lakshmi Nair,FastAPI Workshop,5,Loved it. Clear explanations and great examples.,2026-01-14
+Rahul Gupta,Python Basics,4,Very well explained. Perfect for beginners.,2026-01-15
+Sneha Verma,Data Science Fundamentals,3,Satisfactory. Expected more on visualization tools.,2026-01-16
+Arun Krishnan,AFDE Capstone,5,Excellent mentorship throughout the project.,2026-01-17
+Pooja Mehta,DevOps Bootcamp,4,Learned CI/CD pipeline setup thoroughly.,2026-01-18
+Sanjay Rao,Machine Learning Workshop,1,Very disappointing. Too fast-paced for beginners.,2026-01-19
+Divya Pillai,SQL Fundamentals,5,Amazing session. Complex queries made simple.,2026-01-20
+Manoj Tiwari,React Training,4,Good React hooks coverage. Enjoyed the project.,2026-01-21
+Kavya Nambiar,FastAPI Workshop,3,Average. More real-world examples needed.,2026-01-22
+Harish Chandra,Python Basics,5,Perfect for getting started with Python.,2026-01-23
+Swathi Balaji,Data Science Fundamentals,4,Great content. Pandas and NumPy well covered.,2026-01-24
+Naveen Reddy,AFDE Capstone,3,Good experience. Timelines were a bit tight.,2026-01-25
+Rekha Patel,DevOps Bootcamp,5,Comprehensive coverage of Docker and Kubernetes.,2026-01-26
+Sunil Sharma,Machine Learning Workshop,4,Regression and classification covered well.,2026-01-27
+Geetha Krishnan,SQL Fundamentals,2,Needed more practice sessions on joins.,2026-01-28
+Praveen Kumar,React Training,5,Context API and Redux were explained very well.,2026-01-29
+Nithya Suresh,FastAPI Workshop,4,Pydantic and dependency injection well covered.,2026-01-30
+Balamurugan P,Python Basics,3,Good introduction. More OOP content needed.,2026-02-01
+Saranya Devi,Data Science Fundamentals,5,Loved the EDA hands-on session.,2026-02-02
+Ajith Menon,AFDE Capstone,4,Strong guidance on project structure.,2026-02-03
+Preethi Raj,DevOps Bootcamp,3,Good overview but lacked depth on monitoring.,2026-02-04
+Dinesh Babu,Machine Learning Workshop,5,Neural networks session was outstanding.,2026-02-05
+Vimala Sundaram,SQL Fundamentals,4,Stored procedures explained very clearly.,2026-02-06
+Ramesh Iyer,React Training,2,Too many topics crammed into short sessions.,2026-02-07
+Asha Nair,FastAPI Workshop,5,Best backend framework workshop I have attended.,2026-02-08
+Ganesh Pillai,Python Basics,4,Great for absolute beginners. Very patient trainer.,2026-02-09
+Indira Bose,Data Science Fundamentals,3,Decent but statistics section needed more time.,2026-02-10
+Subramaniam K,AFDE Capstone,5,Brilliant capstone experience from start to end.,2026-02-11
+Malathi Rajan,DevOps Bootcamp,4,Jenkins and GitHub Actions well explained.,2026-02-12
+Vikram Singh,Machine Learning Workshop,1,Content was outdated and examples did not run.,2026-02-13
+Chitra Anand,SQL Fundamentals,5,Performance tuning section was incredibly useful.,2026-02-14
+Balaji Natarajan,React Training,3,Decent intro but state management was rushed.,2026-02-15
+Nandita Ghosh,FastAPI Workshop,4,Middleware and authentication well explained.,2026-02-16
+Krishnamurthy V,Python Basics,5,Trainer was excellent. Very engaging sessions.,2026-02-17
+Radha Venkatesh,Data Science Fundamentals,4,Feature engineering session was very insightful.,2026-02-18
+Selvakumar A,AFDE Capstone,2,Project scope was unclear at the start.,2026-02-19
+Jayanthi Mohan,DevOps Bootcamp,5,Terraform and Ansible coverage was thorough.,2026-02-20
+Muthukumar S,Machine Learning Workshop,4,Practical notebook exercises were very helpful.,2026-02-21
+Usha Ramachandran,SQL Fundamentals,3,Window functions explained but needed more examples.,2026-02-22
+Aravind Pillai,React Training,5,Excellent hands-on project at the end of course.,2026-02-23
+Padmavathi B,FastAPI Workshop,4,Background tasks and async endpoints well covered.,2026-02-24
+Venkataraman R,Python Basics,3,Good for basics. Would have liked more projects.,2026-02-25
+Hema Sundaram,Data Science Fundamentals,5,Model deployment session was a great bonus.,2026-02-26
+Jagadeesh Kumar,AFDE Capstone,4,Good real-world problem statement for the project.,2026-02-27
+Kamala Devi,DevOps Bootcamp,3,Covered essentials. Advanced topics felt rushed.,2026-02-28
+Bhuvanesh R,Machine Learning Workshop,5,Cross-validation and hyperparameter tuning well done.,2026-03-01
+Sarala Krishnan,SQL Fundamentals,4,Indexing and query planning very clearly taught.,2026-03-02
+Murugan Pillai,React Training,4,Component lifecycle and hooks very well covered.,2026-03-03
+Nithyakalyani S,FastAPI Workshop,5,Complete workshop. Covered everything from basics.,2026-03-04
+Prabhakaran T,Python Basics,2,Trainer went too fast. Hard to follow along.,2026-03-05
+Vasantha Kumari,Data Science Fundamentals,4,Sklearn pipelines session was very practical.,2026-03-06
+Elangovan M,AFDE Capstone,5,Thorough code reviews helped a lot.,2026-03-07
+Shanthi Prabhu,DevOps Bootcamp,4,Cloud deployment on AWS was the highlight.,2026-03-08
+Nagarajan S,Machine Learning Workshop,3,Good content but needed more time for projects.,2026-03-09
+Rohini Devi,SQL Fundamentals,5,CTE and recursive queries explained brilliantly.,2026-03-10
+Thangavel K,React Training,4,Testing with Jest well covered at the end.,2026-03-11
+Bhuvana Ravi,FastAPI Workshop,3,Good workshop. File uploads section was unclear.,2026-03-12
+Palaniswamy G,Python Basics,5,Best Python introduction I have taken so far.,2026-03-13
+Revathi Mohan,Data Science Fundamentals,4,Time series analysis was a great addition.,2026-03-14
+Gopalakrishnan V,AFDE Capstone,3,Good experience. Deployment part needed more help.,2026-03-15
+Saraswathi K,DevOps Bootcamp,5,Monitoring with Prometheus and Grafana was excellent.,2026-03-16
+Thirumalai P,Machine Learning Workshop,4,Ensemble methods and boosting explained well.,2026-03-17
+Mythili Suresh,SQL Fundamentals,3,Basic to intermediate level well covered.,2026-03-18
+Chandrasekaran B,React Training,5,Full-stack project at end was very rewarding.,2026-03-19
+Vasuki Annamalai,FastAPI Workshop,4,Token-based authentication clearly explained.,2026-03-20
+Ponnusamy T,Python Basics,3,Satisfactory. Would benefit from more exercises.,2026-03-21
+Ambika Sundaram,Data Science Fundamentals,5,Best data science program available locally.,2026-03-22
+Raman Krishnan,AFDE Capstone,4,Peer reviews and feedback sessions were helpful.,2026-03-23
+Kamakshi Pillai,DevOps Bootcamp,2,Too much theory. Hands-on labs were insufficient.,2026-03-24
+Durai Murugan,Machine Learning Workshop,5,NLP session was an excellent bonus addition.,2026-03-25
+Subbalakshmi R,SQL Fundamentals,4,Normalization concepts made very easy to grasp.,2026-03-26
+Periyasamy K,React Training,3,Good basics. Could include more advanced patterns.,2026-03-27
+Meenakshi Rajan,FastAPI Workshop,5,Excellent. Will definitely attend next workshop.,2026-03-28
+Shanmugam V,Python Basics,4,Exception handling and file I/O well covered.,2026-03-29
+Tamilselvi P,Data Science Fundamentals,3,Good foundation. More visualization needed.,2026-03-30
+Ilayaraja K,AFDE Capstone,5,Incredible learning experience end to end.,2026-03-31
+Parimala Devi,DevOps Bootcamp,4,Container orchestration with Kubernetes was clear.,2026-04-01
+Sathyamurthy R,Machine Learning Workshop,3,Decent content. More projects would help.,2026-04-02
+Komalavalli S,SQL Fundamentals,5,Transaction management explained very clearly.,2026-04-03
+Arumugam P,React Training,4,Redux Toolkit made state management easier.,2026-04-04
+Senthamarai K,FastAPI Workshop,3,Good intro. OAuth2 section needed more depth.,2026-04-05
+Velmurugan S,Python Basics,5,Great trainer. Made complex concepts very simple.,2026-04-06
+Nalini Rajan,Data Science Fundamentals,4,Capstone mini-project at end was very useful.,2026-04-07
+Kathirvel P,AFDE Capstone,2,Documentation requirements were not clearly communicated.,2026-04-08
+Pushpavalli T,DevOps Bootcamp,5,Complete DevOps lifecycle covered thoroughly.,2026-04-09
+Soundararajan M,Machine Learning Workshop,4,Random forest and SVM sessions were excellent.,2026-04-10
+Gomathi Krishnan,SQL Fundamentals,3,Good session. Triggers section needed more time.,2026-04-11
+Murugesan K,React Training,5,Best React course I have completed so far.,2026-04-12
+Arjun Kumar,React Training,5,Excellent content and well-structured sessions.,2026-01-05
+Priya Sharma,FastAPI Workshop,4,Very informative. Practical examples were helpful.,2026-01-06
+Ravi Patel,Python Basics,3,Decent session. Could use more hands-on exercises.,2026-01-07
+Anitha Reddy,Data Science Fundamentals,5,Outstanding program. Highly recommend to everyone.,2026-01-08
+Suresh Babu,AFDE Capstone,4,Great project guidance. Learned a lot.,2026-01-09
+Deepika Singh,React Training,7,Good session overall but rating system unclear.,2026-04-13
+Karthik Raj,FastAPI Workshop,0,Did not attend but got enrolled.,2026-04-14
+Vijay Kumar,Python Basics,6,Great content beyond expectations.,2026-04-15
+Lakshmi Nair,AFDE Capstone,-1,Negative experience with scheduling.,2026-04-16
+Rahul Gupta,Machine Learning Workshop,10,Perfect in every way possible.,2026-04-17

@@ -12,3 +12,15 @@ class Feedback(Base):
     rating = Column(Integer, nullable=False)
     comments = Column(Text)
     submitted_at = Column(DateTime, default=datetime.utcnow)
+
+
+class ETLRun(Base):
+    __tablename__ = "etl_runs"
+
+    run_id = Column(Integer, primary_key=True, index=True)
+    filename = Column(String, nullable=False)
+    total_rows = Column(Integer, default=0)
+    valid_rows = Column(Integer, default=0)
+    duplicate_rows = Column(Integer, default=0)
+    invalid_rows = Column(Integer, default=0)
+    run_at = Column(DateTime, default=datetime.utcnow)
