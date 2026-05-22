@@ -154,6 +154,89 @@ GET /search?keyword=great&rating=5
 
 ---
 
+## 7. Upload CSV / Run ETL
+
+**POST** `/etl/upload`
+
+**Request Body** — `multipart/form-data`
+
+| Field | Type | Description |
+|-------|------|-------------|
+| file | file | CSV or Excel file (.csv, .xlsx, .xls) |
+
+**Response**
+```json
+{
+  "run_id": 1,
+  "filename": "sample_feedback.csv",
+  "total_rows": 110,
+  "valid_rows": 100,
+  "duplicate_rows": 5,
+  "invalid_rows": 5,
+  "errors": [
+    "5 rows dropped due to invalid rating (must be 1–5)",
+    "5 duplicate rows removed"
+  ]
+}
+```
+
+**Error Response (400)**
+```json
+{ "detail": "Only CSV and Excel files are supported" }
+```
+
+---
+
+## 8. ETL Run History
+
+**GET** `/etl/history`
+
+**Response**
+```json
+[
+  {
+    "run_id": 1,
+    "filename": "sample_feedback.csv",
+    "total_rows": 110,
+    "valid_rows": 100,
+    "duplicate_rows": 5,
+    "invalid_rows": 5,
+    "run_at": "2026-05-21T10:30:00"
+  }
+]
+```
+
+---
+
+## 9. Program-wise Analytics
+
+**GET** `/etl/analytics`
+
+**Response**
+```json
+[
+  {
+    "program_name": "React Training",
+    "total_feedback": 25,
+    "avg_rating": 4.5,
+    "highest_rating": 5,
+    "lowest_rating": 3
+  }
+]
+```
+
+---
+
+## 10. Download Feedback Report
+
+**GET** `/etl/report/download`
+
+Returns all feedback records as a downloadable CSV file.
+
+**Response** — `text/csv` file download (`feedback_report.csv`)
+
+---
+
 ## Rating Scale
 
 | Value | Label |
